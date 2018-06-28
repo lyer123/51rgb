@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>51RGB首页</title>
+</head>
+<body>
+    <div class="container">
+        <div class="module-header">
+            <div class="module-content header-inner">
+                <div class="header-logo flt"><img src="images/logo.png"/></div>
+                <ul class="header-nav flt">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="">直播课程</a></li>
+                    <li><a href="">教程</a></li>
+                    <li><a href="">课表</a></li>
+                    <li><a href="">论坛</a></li>
+                    <li><a href="">下载</a></li>
+                    <li><a href="list.html">文章</a></li>
+                    <li><a href="">关于</a></li>
+                </ul>
+                <ul class="header-login frt">
+                    <li><a id="loginLink" href="javascript:;">登录</a></li>
+                    <li><a id="registLink" href="javascript:;">注册</a></li>
+                </ul>
+                <form class="header-search frt">
+                    <input class="input-search" placeholder="请输入搜索内容"/>
+                    <i class="iconfont icon-search"></i>
+                </form>
+            </div>
+        </div>
+<!--        文章列表-->
+        <div class="module-body">
+            <div class="module-content clearfix">
+                <div class="module-side flt">
+                    <h3 class="side-title">文章分类</h3>
+                    <ul class="side-list">
+                        <li>
+                            <i class="fa"></i>
+                            <span>平面设计</span>
+                        </li>
+                        <li>
+                            <i class="fa"></i>
+                            <span>平面设计</span>
+                        </li>
+                        <li>
+                            <i class="fa"></i>
+                            <span>平面设计</span>
+                        </li>
+                    </ul>
+                    <form action="" class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-con" placeholder="请输入想要搜索的内容">
+                            <button type="submit" class="form-con btn-pri">提交</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="module-article-list frt">
+                    <h2 class="module-colum-title">文章列表</h2>
+                    <div class="md-list-box">
+                        <section class="list-item">
+                            <div class="item-text">
+                                <h3 class="item-title"><a href="">
+                                    CSS样式书写规范
+                                </a></h3>
+                                <p class="item-desc">CSS样式书写规范</p>
+                                <div class="item-meta"><span>更新时间:2018-05-15</span></div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>    
+        </div>
+        
+<!--       文章列表结束 -->
+        <div class="module-footer"></div>
+    </div>
+<!--login    -->
+    <div class="module-shade hide">
+         <div class="module-modal-login">
+             <div class="module-modal-header">
+                 <h2 class="modal-title flt">登录</h2>
+                 <i class="module-close iconfont icon-close frt"></i>
+             </div>
+             <div class="module-modal-boby">
+                 <form action="" class="form-login">
+                     <div class="input-field">
+                         <lable class="input-lable">用户名:</lable>
+                         <input class="input-case middle" type="text" placeholder="请输入用户名">
+                     </div>
+                     <div class="input-field">
+                         <lable class="input-lable">密码:</lable>
+                         <input class="input-case middle" type="password" placeholder="请输入密码">
+                     </div>
+                     <div class="btn-box-login">
+                         <button class="btn btn-ghost">登录</button>
+                     </div>
+                 </form>
+             </div>
+         </div>
+    </div>
+<!--    login end-->
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/vmc.slider.full.min.js"></script>
+    <script type="text/javascript">
+		$(function() {
+            //banner
+			$('#slider').vmcSlider({
+				width: 1200,
+				height: 430,
+				gridCol: 10,
+				gridRow: 5,
+				gridVertical: 20,
+				gridHorizontal: 10,
+				autoPlay: true,
+				ascending: true,
+				effects: [
+					'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+					'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+					'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+				],
+				ie6Tidy: false,
+				random: false,
+				duration: 2000,
+				speed: 900
+			});
+            //login
+            $('#loginLink').on('click',function(event){
+                $('.module-shade').removeClass('hide');
+            });
+            $('.module-close').on('click',function(event){
+                event.stopPropagation();
+                $('.module-shade').addClass('hide');
+            });
+		});
+	</script>
+</body>
+</html>

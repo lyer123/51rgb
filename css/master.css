@@ -89,6 +89,8 @@ h5 {
 
 .module-header {
     height: 70px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 1px 1px #ccc;
 }
 
 .module-header .header-inner {
@@ -487,3 +489,70 @@ h5 {
     height: 150px;
     background: #ccc;
 }
+
+/*artlcle-list*/
+
+.module-side{
+    width: 280px;
+    min-height: 300px;
+    background: ;
+}
+
+.side-title{
+    font-size: 24px;
+    font-weight: 500;
+
+    margin: 60px 0 40px;
+    
+}
+
+
+.fa{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/add%20(2).png') no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.side-list span{
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.side-list li{
+    margin-bottom: 22px;
+}
+
+.form-con{
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    line-height: 1;
+}
+
+.btn-pri{
+    height: 30px;
+}
+
+.module-article-list{
+    width: 900px;
+    min-height: 300px;
+    
+}
+
+.module-colum-title{
+    font-size: 36px;
+    margin-top: 40px;
+    font-weight: 500;
+    
+}
+
+.md-list-box{
+    margin: 50px auto 0;
+}
+    
